@@ -9,7 +9,7 @@ body {
     width: 90%;
     max-width: 800px;
     margin: 50px auto;
-    padding: 40px;
+    padding: 20px; /* Reduzi o padding para um espaçamento mais equilibrado */
     text-align: center;
     background-color: #fff;
     border-radius: 8px;
@@ -19,7 +19,7 @@ body {
 
 h1 {
     color: #2c3e50;
-    font-size: 2.5em;
+    font-size: 2em; /* Reduzi o tamanho da fonte para garantir que caiba na tela */
     margin-bottom: 20px;
 }
 
@@ -27,14 +27,14 @@ p {
     color: #7f8c8d;
     font-size: 16px;
     line-height: 1.5;
-    margin-bottom: 20px; /* Reduzi o margin-bottom para equilibrar os espaçamentos */
+    margin-bottom: 20px;
 }
 
 img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 20px 0;
+    margin: 20px auto; /* Centralizei a imagem e adicionei margem superior e inferior */
 }
 
 #downloadButton {
@@ -48,7 +48,7 @@ img {
     border-radius: 5px;
     font-size: 18px;
     transition: background-color 0.3s ease;
-    margin-top: 20px; /* Adicionei um espaçamento acima do botão */
+    margin-top: 20px;
 }
 
 #downloadButton:hover {
@@ -57,21 +57,11 @@ img {
 
 /* Adicionando regras de mídia para ajustar o layout em dispositivos móveis */
 @media only screen and (max-width: 600px) {
-    .container {
-        padding: 20px;
-    }
-
     h1 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
-    p {
-        font-size: 14px;
-        margin-bottom: 15px;
-    }
-
-    #downloadButton {
-        padding: 12px 20px;
-        font-size: 16px;
+    img {
+        margin: 10px auto; /* Reduzi a margem superior e inferior da imagem para melhor ajuste */
     }
 }
